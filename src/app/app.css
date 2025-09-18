@@ -1,0 +1,14 @@
+nav {
+  margin: 10px;
+}
+
+a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: blue;
+}
+
+a.active {
+  font-weight: bold;
+  color: darkred;
+}

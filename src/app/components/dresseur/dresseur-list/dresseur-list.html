@@ -1,0 +1,16 @@
+<h2>Liste des Dresseurs</h2>
+<button routerLink="/dresseurs/new">Ajouter Dresseur</button>
+<table>
+  <tr>
+    <th>Nom</th><th>Pseudo</th><th>Niveau</th><th>Actions</th>
+  </tr>
+  <tr *ngFor="let d of dresseurs">
+    <td>{{d.nom}}</td>
+    <td>{{d.pseudo}}</td>
+    <td>{{d.niveau}}</td>
+    <td>
+      <button (click)="goToDetail(d.id)">Voir</button>
+      <button (click)="delete(d.id)">Supprimer</button>
+    </td>
+  </tr>
+</table>
